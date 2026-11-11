@@ -12,6 +12,6 @@ For the best development experience, use VS Code + Live Server.
 
 - `index.html` — page structure/content
 - `style.css` — retro visual design/responsive layout
-- `script.js` — typewriter, cursor glow, mobile menu and scroll animations
+- `script.js` — typewriter, cursor glow animations
 
 No framework is required.
