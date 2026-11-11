@@ -8,19 +8,6 @@ Open `index.html` in your browser.
 
 For the best development experience, use VS Code + Live Server.
 
-## Customize
-
-Search and replace:
-
-- `YOUR NAME`
-- `YOUR_DEV_ID`
-- `YOUR COMPANY`
-- `your.email@example.com`
-- GitHub URL
-- LinkedIn URL
-- Project names/descriptions/links
-- Experience dates
-
 ## Main files
 
 - `index.html` — page structure/content
