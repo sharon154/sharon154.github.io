@@ -1,6 +1,8 @@
 # Retro Developer Portfolio
 
-A responsive retro-futuristic developer portfolio built with plain HTML, CSS and JavaScript.
+Hello and welcome to my portfolio.
+
+I have followed a responsive retro theme for showcasing my developer portfolio built with plain HTML, CSS and JavaScript.
 
 ## Run locally
 
@@ -12,6 +14,6 @@ For the best development experience, use VS Code + Live Server.
 
 - `index.html` — page structure/content
 - `style.css` — retro visual design/responsive layout
-- `script.js` — typewriter, cursor glow animations
+- `script.js` — typewriter, cursor glow, mobile menu
 
 No framework is required.
