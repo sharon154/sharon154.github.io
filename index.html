@@ -1,210 +1,459 @@
-<!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>My Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Developer portfolio — building modern software with a retro twist." />
+  <title>Sharon Mascarenhas // Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="is-preload">
+<body>
+  <div class="cursor-glow"></div>
+  <div id="cursor-trail"></div>
 
-	<!-- Header -->
-	<header id="header">
-		<h1>SMAS</h1>
-		<nav>
-			<ul>
-				<li><a href="#intro"><i class="fa-solid fa-house"></i></a></li>
-				<li><a href="#one"><i class="fa-solid fa-laptop"></i>What I Do</a></li>
-				<li><a href="#two"><i class="fa-solid fa-gear"></i>Tech Stack</a></li>
-				<li><a href="#work"><i class="fa-solid fa-briefcase"></i>My Projects</a></li>
-				<li><a href="#contact"><i class="fa-solid fa-message"></i>Connect</a></li>
-			</ul>
-		</nav>
-	</header>
+  <div class="scanlines"></div>
+  <div class="cursor-glow"></div>
 
-	<!-- Intro -->
-	<section id="intro" class="main style1 dark fullscreen">
-		<div class="content">
-			<header>
-				<h2>Sharon Mascarenhas</h2>
-				<h4>Web Developer</h4>
-			</header>
-			<p>A dedicated and creative student with a strong passion for web development,
-				skilled in <strong>HTML, CSS, JavaScript and the MERN stack</strong>. I am eager to leverage my
-				technical
-				skills and innovative thinking to contribute to impactful web projects, enhancing user experiences and
-				driving results in a dynamic team environment.</p>
-			<footer>
-				<a href="#one" class="button style2 down">More</a>
-			</footer>
-		</div>
-	</section>
+  <header class="navbar">
+    <a href="#home" class="logo">| SM |</a>
 
-	<!-- One -->
-	<section id="one" class="main style2 right dark fullscreen">
-		<div class="content box style2">
-			<header>
-				<h2>What I Do</h2>
-			</header>
-			<p>Currently, I'm honing my skills in ReactJS, JavaScript, Node.js, Express.js to build sleek, responsive
-				web applications with integration of MongoDB database. I enjoy developing web applications that combine
-				efficient back-end systems with smooth, responsive front-end user experiences.
-			</p>
-		</div>
-		<a href="#two" class="button style2 down anchored">Next</a>
-	</section>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
 
-	<!-- Two -->
-	<section id="two" class="main style2 left dark fullscreen">
-		<div class="content box style2">
-			<header>
-				<h2>Tech Stack</h2>
-			</header>
-			<div class="tech-icons">
-				<img alt="JavaScript" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-				<img alt="Node.js" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-				<img alt="React" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-				<img alt="Tailwind" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" />
-				<img alt="Express" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-				<img alt="MongoDB" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-				<img alt="HTML" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-				<img alt="CSS" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-				<img alt="Bootstrap" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
-				<img alt="Java" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-				<img alt="MySQL" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-				<img alt="Oracle" width="50px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" />
-			</div>
+    <nav class="nav-links">
+      <a href="#skills">01_SKILLS</a>
+      <a href="#projects">02_PROJECTS</a>
+      <!-- <a href="#experience">04_EXPERIENCE</a> -->
+      <a href="#about">03_ABOUT</a>
+      <a href="#contact">04_CONTACT</a>
+    </nav>
+  </header>
 
-		</div>
-		<a href="#work" class="button style2 down anchored">Next</a>
-	</section>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-grid"></div>
 
-	<!-- Work -->
-	<section id="work" class="main style3 primary">
-		<div class="content">
-			<header>
-				<h2>My Projects</h2>
-				<ul>
-					<li><strong>GIBS - Bus System: </strong>Developed a bus system using the MERN stack.</li>
-					<li><strong>Pokemon App: </strong>Created a REACT app to display pokemon data from API using AXIOS.
-					</li>
-					<li><strong>Blog App: </strong>Developed backend for a Blog Application using EXPRESS, NODE and MONGODB</li>
-					<li><strong>E-commerce App: </strong>Built an ecommerce website using JSP, SERVLET and MYSQL.</li>
-					<li><strong>Smart Bus System Report: </strong>Created a report on Smart Bus System for a business
-						modelling project.</li>
-					<li><strong>Calculator App: </strong>Simple calculator application using HTML, CSS and Javascript
-					</li>
-					<li><strong>Form Validation: </strong>Simple projects like Form validation, Navigation bar using HTML, CSS and Javascript</li>
-					<li><strong>Pizza Application: </strong>Pizza GUI application using tkinter module in PYTHON</li>
-				</ul>
-			</header>
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME :)</p>
 
-			<!-- Gallery  -->
-			<div class="gallery">
-				<article class="from-left">
-					<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.png"
-							title="The Anonymous Red" alt="" /></a>
-				</article>
-				<article class="from-right">
-					<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.png"
-							title="Airchitecture II" alt="" /></a>
-				</article>
-				<article class="from-left">
-					<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.png" title="Air Lounge"
-							alt="" /></a>
-				</article>
-				<article class="from-right">
-					<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.png" title="Carry on"
-							alt="" /></a>
-				</article>
-				<article class="from-left">
-					<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.png"
-							title="The sparkling shell" alt="" /></a>
-					<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/07.jpeg"
-							title="The sparkling shell" alt="" /></a>
-				</article>
-				<article class="from-right">
-					<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.png" title="Bent IX"
-							alt="" /></a>
-					<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/08.png" title="Bent IX"
-							alt="" /></a>
-				</article>
-			</div>
+        <h1>
+          HI, I'M<br />
+          <span class="glitch" data-text="SHARON MASCARENHAS">SHARON MASCARENHAS</span>
+        </h1>
 
-		</div>
-	</section>
+        <div class="terminal-line">
+          <span class="prompt">$</span>
+          <span id="typed-text"></span><span class="caret">_</span>
+        </div>
 
-	<!-- Contact -->
-	<section id="contact" class="main style3 secondary">
-		<div class="content">
-			<div class="box">
-				<header>
-					<h2>Connect with me</h2>
-				</header>
-				<!-- LinkedIn -->
-				<a href="https://linkedin.com/in/sharon-m-63396132a"><img alt="LinkedIn" width="40px" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/linkedin.svg" /></a>
+        <p class="hero-description">
+          I am a software developer who is currently honing their skills
+          in TypeScript and Node.js as I survive through each day of my work.
+        </p>
 
-				<!-- GitHub -->
-				<a href="https://github.com/sharon154"><img alt="GitHub" width="40px"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">VIEW_PROJECTS →</a>
+          <a href="#contact" class="btn btn-secondary">CONTACT_ME</a>
+        </div>
 
-			</div>
-		</div>
-	</section>
+        <div class="status-bar">
+          <span><i class="status-dot"></i>Developer</span>
+          <span><i class="status-dot"></i>Alive</span>
+        </div>
+      </div>
 
-	<!-- Footer -->
-	<footer id="footer">
+      <div class="hero-card">
+        <div class="window-bar">
+          <span>sharon.exe</span>
+          <span>● ● ●</span>
+        </div>
+        <div class="code-window">
+          <span class="code-comment">// that's my current configuration</span><br><br>
+          <span class="code-key">const</span> me = {<br>
+          &nbsp;&nbsp;name: <span class="code-string">"SHARON MASCARENHAS"</span>,<br>
+          &nbsp;&nbsp;role: <span class="code-string">"Software Developer"</span>,<br>
+          &nbsp;&nbsp;status: <span class="code-string">"!unemployed"</span><br>
+          };
+        </div>
+      </div>
+    </section>
 
-		<!-- Icons -->
-		<ul class="menu">
-			<li>
-				<a href="mailto:your-email@example.com" class="icon brands">
-					<i class="fas fa-envelope"></i>sharonmas04@gmail.com
-				</a>
-			</li>
-					</ul>
 
-		<!-- Menu -->
-		<ul class="menu">
-			<li>&copy; Sharon</li>
-			<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-		</ul>
 
-	</footer>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <p class="section-label">MY_TOOLKIT</p>
+          <h2>Tech stack I've worked with.</h2>
+          </h2>
+        </div>
+      </div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-icon">&lt;/&gt;</span>
+          <h3>FRONTEND</h3>
+          <div class="tags">
+            <span><i class="devicon-angular-plain"></i> Angular</span>
+            <span><i class="devicon-react-original"></i> React</span>
+            <span><i class="devicon-javascript-plain"></i> JavaScript</span>
+            <span><i class="devicon-typescript-plain"></i> TypeScript</span>
+            <span><i class="devicon-bootstrap-plain"></i> Bootstrap</span>
+            <span><i class="devicon-tailwindcss-original"></i> Tailwind</span>
+
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-icon">⌘</span>
+          <h3>BACKEND</h3>
+          <div class="tags">
+            <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+            <span><i class="devicon-express-original"></i> Express</span>
+            <span><i class="devicon-python-plain"></i> Python</span>
+            <span><i class="devicon-java-plain"></i> Java</span>
+            <span>⇄ REST APIs</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-icon">DB</span>
+          <h3>DATABASE</h3>
+          <div class="tags">
+            <span><i class="devicon-mysql-plain"></i> MySQL</span>
+            <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+            <span><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-icon">⚙</span>
+          <h3>TOOLS</h3>
+          <div class="tags">
+            <span><i class="devicon-git-plain"></i> Git</span>
+            <span><i class="devicon-github-original"></i> GitHub</span>
+            <span><i class="devicon-cypressio-plain"></i> Cypress</span>
+            <span>◈ Storybook</span>
+            <span>⌘ SVN</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <p class="section-label">MY_WORK</p>
+          <h2>Things I've built.</h2>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_03</span>
+            <span class="project-status">ONGOING</span>
+          </div>
+          <div class="project-visual visual-three">
+            <div class="project-image">
+              <img src="assets/images/rms.png" alt="Restaurant Management System">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>RESTAURANT MANAGEMENT SYSTEM - TOMATO</h3>
+            <p>
+              A full stack restaurant management system to manage menus, orders, and customer data
+              efficiently.
+            </p>
+            <div class="tags">
+              <span>React</span><span>ContextAPI</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sharon154/food-delivery" target="_blank" rel="noreferrer">[ GITHUB ]</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_04</span>
+            <span class="project-status">COMPLETED</span>
+          </div>
+          <div class="project-visual visual-one">
+            <div class="project-image">
+              <img src="assets/images/pokemon_app.png" alt="Pokemon App">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>POKEMON APP</h3>
+            <p>
+              Created a pokemon app to display data from an API, display the data in cards with images, add search
+              functionality to filter the data.
+            </p>
+            <div class="tags">
+              <span>React</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sharon154/pokemon-app" target="_blank" rel="noreferrer">[ GITHUB ]</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_05</span>
+            <span class="project-status">COMPLETED</span>
+          </div>
+          <div class="project-visual visual-two">
+            <div class="project-image">
+              <img src="assets/images/ecommerce.png" alt="Restaurant Management System">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>E-commerce Clothing Website</h3>
+            <p>
+              Developed an e-commerce web application with functionality to display products, search products, add to
+              cart
+              and admin dashboard.
+            </p>
+            <div class="tags"><span>JSP</span><span>Servlets</span><span>MySQL</span></div>
+            <div class="project-links">
+              <a href="https://github.com/sharon154/ecommerce-website-jsp-servlet" target="_blank" rel="noreferrer">[
+                GITHUB ]</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_01</span>
+            <span class="project-status">COMPLETED</span>
+          </div>
+          <div class="project-visual visual-one">
+            <div class="project-image">
+              <img src="assets/images/homepageGibs.png" alt="Bus System project">
+            </div>
+          </div>
+
+
+
+          <div class="project-content">
+            <h3>BUS SYSTEM - GIBS</h3>
+            <p>
+              A full-stack bus system with functionality including login, booking, feedback, bus schedule,
+              cancel
+              ticket, forgot password, email verification and admin dashboard.
+            </p>
+            <div class="tags">
+              <span>React</span><span>Redux</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sharon154/bus-system-gibs" target="_blank" rel="noreferrer">[ GITHUB ]</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_02</span>
+            <span class="project-status">COMPLETED</span>
+          </div>
+          <div class="project-visual visual-two">
+            <div class="project-image">
+              <img src="assets/images/quiz_app.png" alt="Quiz Application">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>QUIZ APPLICATION</h3>
+            <p>
+              Created a quiz app with one-question-per-screen navigation, user-friendly design, and a final score
+              display upon
+              completing the questions.
+            </p>
+            <div class="tags"><span>React</span><span>ContextAPI</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="https://github.com/sharon154/quiz-app" target="_blank" rel="noreferrer">[ GITHUB ]</a>
+            </div>
+          </div>
+        </article>
+
+
+
+
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_06</span>
+            <span class="project-status">COMPLETED</span>
+          </div>
+          <div class="project-visual visual-three">
+            <div class="project-image">
+              <img src="assets/images/pizza_page.png" alt="Restaurant Management System">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Pizza Order Page</h3>
+            <p>
+              Created a single GUI page to customize order pizza. enter customer information and display order summary.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Tkinter module</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sharon154/pizza-order-gui-page" target="_blank" rel="noreferrer">[ GITHUB
+                ]</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <p class="section-label">MY_PROFILE</p>
+          <h2>Things to know about me.</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="terminal-box about-terminal">
+          <div class="terminal-header">
+            <span>about.txt</span>
+            <span>READ_ONLY</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="green">01</span> I’m a full stack developer. 💻</p>
+            <p><span class="green">02</span> I watch travel vlogs as my favourite past-time.✈️</p>
+            <p><span class="green">03</span> I play badminton pretty nice, i guess. 🏸</p>
+            <p><span class="green">04</span> I'm very competitive at Board Games. 🎲</p>
+            <p><span class="green">05</span> I love spending time in My Room. 🛋️</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="cat-card">
+            <img src="assets/images/cat.jpg" alt="Cute Cat">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <!-- <section id="experience" class="section">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div>
+          <p class="section-label">SYSTEM_LOG</p>
+          <h2>EXPERIENCE</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — PRESENT</span>
+            <h3>JUNIOR APPLICATION DEVELOPER</h3>
+            <p class="company">AERZEN MACHINES</p>
+            <p>
+              Building and maintaining web applications, working with Angular,
+              state management, testing, APIs and modern development workflows.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-content">
+            <span class="timeline-date">Internship</span>
+            <h3>FULL STACK DEVELOPER INTERN</h3>
+            <p class="company">AERZEN MACHINES</p>
+            <p>
+              Building and maintaining web applications, working with Angular,
+              state management, testing, APIs and modern development workflows.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">03</div>
+          <div class="timeline-content">
+            <span class="timeline-date">INTERNSHIP</span>
+            <h3>FULL STACK DEVELOPER INTERN</h3>
+            <p class="company">PARAM GROUP OF COMPANIES</p>
+            <p>
+              Worked on real-world application development and gained practical
+              experience with frontend, backend and database technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div>
+          <p class="section-label">MY_CONTACT</p>
+          <h2>Ways you can find me.</h2>
+        </div>
+      </div>
+      <div class="contact-terminal">
+        <div class="terminal-header">
+          <span>contact.sh</span>
+          <span>EXECUTABLE</span>
+        </div>
+
+        <div class="contact-body">
+          <h2>HAVE A<br /><span>GOOD IDEA?</span></h2>
+          <p>Let's talk.</p>
+
+          <p class="contact-copy">
+            GOOD THINGS BEGIN WITH A CONVERSATION!
+          </p>
+
+          <div class="contact-links">
+            <a class="email-link" href="mailto:sharonmas04@gmail.com">
+              <i class="fas fa-envelope mail-icon"></i></a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/sharon-m-63396132a">
+              <i class="fa-brands fa-linkedin-in linkedin-icon"></i></a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/sharon154"><i class="fa-brands fa-github github-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 SHARON MASCARENHAS</span>
+    <span>BUILT WITH HTML + CSS + JAVASCRIPT</span>
+    <span>NO_FRAMEWORKS_REQUIRED_</span>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 
